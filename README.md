@@ -34,7 +34,7 @@ Also ensure that **`shape_predictor_68.dat`** is located in the same folder as *
 In pose.py, edit the following to match your webcam's framerate:
 
 ```python
-# CHANGE FRAMERATE ACCORDING TOWEBCAM
+# CHANGE FRAMERATE ACCORDING TO WEBCAM
 vs = VideoStream(src=0, framerate=30).start()
 ```
 
@@ -49,7 +49,7 @@ If you would like to use the video output file feature, you will also need to ed
 out = cv2.VideoWriter(
     "poseEstimate.mp4",
     cv2.VideoWriter_fourcc(*"mp4v"),
-    15, #REPLACE WITH AVERAGE FPS
+    15, # REPLACE WITH AVERAGE FPS
     (frame.shape[1], frame.shape[0]),
 )
 ``` 
